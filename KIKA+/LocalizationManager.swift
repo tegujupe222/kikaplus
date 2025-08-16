@@ -669,6 +669,15 @@ struct LocalizationData {
             "find_professional": "専門家を探す",
             "find_translation_expert": "翻訳専門家を探す",
             
+            // 翻訳サポート
+            "translation_support_title": "翻訳サポート",
+            "select_language": "言語選択",
+            "select_document": "書類選択",
+            "original_text": "原文",
+            "show_template": "テンプレート表示",
+            "translate": "翻訳",
+            "faq": "よくある質問"
+            
             // 通知管理
             "no_reminders": "リマインダーがありません",
             "no_matching_reminders": "該当するリマインダーがありません",
@@ -1109,6 +1118,18 @@ struct LocalizationData {
             "interview_a18": "Not particularly.",
             "interview_tip18": "Answer concisely.",
             
+            // Translation Support
+            "translation_support_title": "Translation Support",
+            "select_language": "Select Language",
+            "select_document": "Select Document",
+            "original_text": "Original Text",
+            "show_template": "Show Template",
+            "translate": "Translate",
+            "faq": "FAQ",
+            "faq_q1": "Is translation required?",
+            "faq_q2": "Is notarization required?",
+            "faq_q3": "Should I request professional translation?",
+            
             // InterviewPreparationView用
             "japanese_audio": "Japanese Audio",
             "multilingual_subtitles": "Multilingual Subtitles",
@@ -1323,6 +1344,18 @@ struct LocalizationData {
             "interview_a18": "没有特别的问题。",
             "interview_tip18": "请简洁回答。",
             
+            // Translation Support
+            "translation_support_title": "翻译支持",
+            "select_language": "选择语言",
+            "select_document": "选择文件",
+            "original_text": "原文",
+            "show_template": "显示模板",
+            "translate": "翻译",
+            "faq": "常见问题",
+            "faq_q1": "需要翻译吗？",
+            "faq_q2": "需要公证吗？",
+            "faq_q3": "应该请求专业翻译吗？",
+            
             // InterviewPreparationView用
             "japanese_audio": "日语音频",
             "multilingual_subtitles": "多语言字幕",
@@ -1519,6 +1552,18 @@ struct LocalizationData {
             "interview_a12": "是的，很好。",
             "interview_tip12": "請表現出您與家人關係良好。",
             
+            // Translation Support
+            "translation_support_title": "翻譯支援",
+            "select_language": "選擇語言",
+            "select_document": "選擇文件",
+            "original_text": "原文",
+            "show_template": "顯示範本",
+            "translate": "翻譯",
+            "faq": "常見問題",
+            "faq_q1": "需要翻譯嗎？",
+            "faq_q2": "需要公證嗎？",
+            "faq_q3": "應該請求專業翻譯嗎？",
+            
             // 文件檢查清單
             "document_checklist_title": "文件檢查清單",
             "document_detail_title": "文件詳細",
@@ -1698,6 +1743,18 @@ struct LocalizationData {
             "interview_q18": "Bạn có câu hỏi nào khác không?",
             "interview_a18": "Không có gì đặc biệt.",
             "interview_tip18": "Hãy trả lời ngắn gọn.",
+            
+            // Translation Support
+            "translation_support_title": "Hỗ trợ dịch thuật",
+            "select_language": "Chọn ngôn ngữ",
+            "select_document": "Chọn tài liệu",
+            "original_text": "Văn bản gốc",
+            "show_template": "Hiển thị mẫu",
+            "translate": "Dịch",
+            "faq": "Câu hỏi thường gặp",
+            "faq_q1": "Có cần dịch thuật không?",
+            "faq_q2": "Có cần công chứng không?",
+            "faq_q3": "Có nên yêu cầu dịch thuật chuyên nghiệp không?",
             
             // InterviewPreparationView用
             "japanese_audio": "Âm thanh tiếng Nhật",
@@ -1913,6 +1970,18 @@ struct LocalizationData {
             "interview_a18": "특별히 없습니다.",
             "interview_tip18": "간결하게 답하세요.",
             
+            // Translation Support
+            "translation_support_title": "번역 지원",
+            "select_language": "언어 선택",
+            "select_document": "문서 선택",
+            "original_text": "원문",
+            "show_template": "템플릿 표시",
+            "translate": "번역",
+            "faq": "자주 묻는 질문",
+            "faq_q1": "번역이 필요한가요?",
+            "faq_q2": "공증이 필요한가요?",
+            "faq_q3": "전문 번역을 요청해야 하나요?",
+            
             // InterviewPreparationView용
             "japanese_audio": "일본어 음성",
             "multilingual_subtitles": "다국어 자막",
@@ -2127,6 +2196,18 @@ struct LocalizationData {
             "interview_a18": "Walang partikular.",
             "interview_tip18": "Sumagot nang maikli.",
             
+            // Translation Support
+            "translation_support_title": "Suporta sa Pagsasalin",
+            "select_language": "Piliin ang Wika",
+            "select_document": "Piliin ang Dokumento",
+            "original_text": "Orihinal na Teksto",
+            "show_template": "Ipakita ang Template",
+            "translate": "Isalin",
+            "faq": "FAQ",
+            "faq_q1": "Kailangan ba ng pagsasalin?",
+            "faq_q2": "Kailangan ba ng notaryo?",
+            "faq_q3": "Dapat bang humiling ng propesyonal na pagsasalin?",
+            
             // InterviewPreparationView用
             "japanese_audio": "Audio sa Hapon",
             "multilingual_subtitles": "Mga subtitle sa maraming wika",
@@ -2340,6 +2421,18 @@ struct LocalizationData {
             "interview_q18": "तपाईंसँग अरू प्रश्नहरू छन्?",
             "interview_a18": "विशेष छैन।",
             "interview_tip18": "संक्षिप्त रूपमा जवाफ दिनुहोस्।",
+            
+            // Translation Support
+            "translation_support_title": "अनुवाद सहयोग",
+            "select_language": "भाषा छान्नुहोस्",
+            "select_document": "कागजात छान्नुहोस्",
+            "original_text": "मूल पाठ",
+            "show_template": "टेम्पलेट देखाउनुहोस्",
+            "translate": "अनुवाद",
+            "faq": "बारम्बार सोधिने प्रश्नहरू",
+            "faq_q1": "अनुवाद आवश्यक छ?",
+            "faq_q2": "नोटरी आवश्यक छ?",
+            "faq_q3": "म पेशेवर अनुवाद माग्नु पर्छ?",
             
             // InterviewPreparationView用
             "japanese_audio": "जापानी भाषा",
