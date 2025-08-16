@@ -14,7 +14,91 @@ struct StepGuideView: View {
     @State private var completedSteps: Set<Int> = []
     @ObservedObject private var localizationManager = LocalizationManager.shared
     
-    let steps: [Step] = []
+    var steps: [Step] {
+        [
+            Step(
+                id: 0,
+                title: localizationManager.localizedString(.step1Title),
+                description: localizationManager.localizedString(.step1Description),
+                details: [
+                    localizationManager.localizedString(.step1Detail1),
+                    localizationManager.localizedString(.step1Detail2),
+                    localizationManager.localizedString(.step1Detail3),
+                    localizationManager.localizedString(.step1Detail4)
+                ],
+                estimatedTime: "2-3 weeks",
+                requiredDocuments: [
+                    localizationManager.localizedString(.step1RequiredDoc1),
+                    localizationManager.localizedString(.step1RequiredDoc2)
+                ],
+                tips: localizationManager.localizedString(.step1Tips)
+            ),
+            Step(
+                id: 1,
+                title: localizationManager.localizedString(.step2Title),
+                description: localizationManager.localizedString(.step2Description),
+                details: [
+                    localizationManager.localizedString(.step2Detail1),
+                    localizationManager.localizedString(.step2Detail2),
+                    localizationManager.localizedString(.step2Detail3)
+                ],
+                estimatedTime: "1-2 weeks",
+                requiredDocuments: [
+                    localizationManager.localizedString(.step2RequiredDoc1),
+                    localizationManager.localizedString(.step2RequiredDoc2)
+                ],
+                tips: localizationManager.localizedString(.step2Tips)
+            ),
+            Step(
+                id: 2,
+                title: localizationManager.localizedString(.step3Title),
+                description: localizationManager.localizedString(.step3Description),
+                details: [
+                    localizationManager.localizedString(.step3Detail1),
+                    localizationManager.localizedString(.step3Detail2),
+                    localizationManager.localizedString(.step3Detail3)
+                ],
+                estimatedTime: "1 day",
+                requiredDocuments: [
+                    localizationManager.localizedString(.step3RequiredDoc1),
+                    localizationManager.localizedString(.step3RequiredDoc2)
+                ],
+                tips: localizationManager.localizedString(.step3Tips)
+            ),
+            Step(
+                id: 3,
+                title: localizationManager.localizedString(.step4Title),
+                description: localizationManager.localizedString(.step4Description),
+                details: [
+                    localizationManager.localizedString(.step4Detail1),
+                    localizationManager.localizedString(.step4Detail2),
+                    localizationManager.localizedString(.step4Detail3)
+                ],
+                estimatedTime: "3-6 months",
+                requiredDocuments: [
+                    localizationManager.localizedString(.step4RequiredDoc1),
+                    localizationManager.localizedString(.step4RequiredDoc2)
+                ],
+                tips: localizationManager.localizedString(.step4Tips)
+            ),
+            Step(
+                id: 4,
+                title: localizationManager.localizedString(.step5Title),
+                description: localizationManager.localizedString(.step5Description),
+                details: [
+                    localizationManager.localizedString(.step5Detail1),
+                    localizationManager.localizedString(.step5Detail2),
+                    localizationManager.localizedString(.step5Detail3)
+                ],
+                estimatedTime: "1-2 weeks",
+                requiredDocuments: [
+                    localizationManager.localizedString(.step5RequiredDoc1),
+                    localizationManager.localizedString(.step5RequiredDoc2)
+                ],
+                tips: localizationManager.localizedString(.step5Tips)
+            )
+        ]
+    }
     
     var body: some View {
         ScrollView {

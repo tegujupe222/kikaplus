@@ -156,6 +156,53 @@ enum LocalizationKey: String, CaseIterable, RawRepresentable {
     case requiredDocuments = "required_documents"
     case tips = "tips"
     
+    // Step Details
+    case step1Title = "step1_title"
+    case step1Description = "step1_description"
+    case step1Detail1 = "step1_detail1"
+    case step1Detail2 = "step1_detail2"
+    case step1Detail3 = "step1_detail3"
+    case step1Detail4 = "step1_detail4"
+    case step1RequiredDoc1 = "step1_required_doc1"
+    case step1RequiredDoc2 = "step1_required_doc2"
+    case step1Tips = "step1_tips"
+    
+    case step2Title = "step2_title"
+    case step2Description = "step2_description"
+    case step2Detail1 = "step2_detail1"
+    case step2Detail2 = "step2_detail2"
+    case step2Detail3 = "step2_detail3"
+    case step2RequiredDoc1 = "step2_required_doc1"
+    case step2RequiredDoc2 = "step2_required_doc2"
+    case step2Tips = "step2_tips"
+    
+    case step3Title = "step3_title"
+    case step3Description = "step3_description"
+    case step3Detail1 = "step3_detail1"
+    case step3Detail2 = "step3_detail2"
+    case step3Detail3 = "step3_detail3"
+    case step3RequiredDoc1 = "step3_required_doc1"
+    case step3RequiredDoc2 = "step3_required_doc2"
+    case step3Tips = "step3_tips"
+    
+    case step4Title = "step4_title"
+    case step4Description = "step4_description"
+    case step4Detail1 = "step4_detail1"
+    case step4Detail2 = "step4_detail2"
+    case step4Detail3 = "step4_detail3"
+    case step4RequiredDoc1 = "step4_required_doc1"
+    case step4RequiredDoc2 = "step4_required_doc2"
+    case step4Tips = "step4_tips"
+    
+    case step5Title = "step5_title"
+    case step5Description = "step5_description"
+    case step5Detail1 = "step5_detail1"
+    case step5Detail2 = "step5_detail2"
+    case step5Detail3 = "step5_detail3"
+    case step5RequiredDoc1 = "step5_required_doc1"
+    case step5RequiredDoc2 = "step5_required_doc2"
+    case step5Tips = "step5_tips"
+    
     // その他の画面用
     case progressStatus = "progress_status"
     case stepCompleted = "step_completed"
@@ -730,6 +777,53 @@ struct LocalizationData {
             "residence_qualification": "在留資格",
             "years_in_japan": "在日期間",
             "years": "年",
+            
+            // Step Details
+            "step1_title": "書類準備",
+            "step1_description": "帰化申請に必要な書類を準備します",
+            "step1_detail1": "パスポートの有効性を確認",
+            "step1_detail2": "出生証明書を取得",
+            "step1_detail3": "国籍証明書を取得",
+            "step1_detail4": "在留カードの確認",
+            "step1_required_doc1": "パスポート",
+            "step1_required_doc2": "出生証明書",
+            "step1_tips": "書類は最新のものを使用してください",
+            
+            "step2_title": "申請書作成",
+            "step2_description": "帰化許可申請書を作成します",
+            "step2_detail1": "申請書の記入",
+            "step2_detail2": "必要書類の添付",
+            "step2_detail3": "申請理由書の作成",
+            "step2_required_doc1": "帰化許可申請書",
+            "step2_required_doc2": "申請理由書",
+            "step2_tips": "丁寧に記入し、間違いがないか確認してください",
+            
+            "step3_title": "法務局提出",
+            "step3_description": "申請書を法務局に提出します",
+            "step3_detail1": "最寄りの法務局を確認",
+            "step3_detail2": "申請書の提出",
+            "step3_detail3": "受付番号の確認",
+            "step3_required_doc1": "申請書一式",
+            "step3_required_doc2": "本人確認書類",
+            "step3_tips": "提出前に書類の確認を忘れずに",
+            
+            "step4_title": "書類審査",
+            "step4_description": "提出された書類の審査が行われます",
+            "step4_detail1": "書類の形式審査",
+            "step4_detail2": "内容の実質審査",
+            "step4_detail3": "追加書類の要求",
+            "step4_required_doc1": "追加書類（必要な場合）",
+            "step4_required_doc2": "補正書類（必要な場合）",
+            "step4_tips": "追加書類の要求があった場合は迅速に対応してください",
+            
+            "step5_title": "面接準備",
+            "step5_description": "面接に向けて準備を行います",
+            "step5_detail1": "面接日程の確認",
+            "step5_detail2": "面接内容の準備",
+            "step5_detail3": "必要書類の準備",
+            "step5_required_doc1": "本人確認書類",
+            "step5_required_doc2": "追加書類",
+            "step5_tips": "面接では正直に答えることが重要です",
             "occupation": "職業",
             "email_address": "メールアドレス",
             "permanent_resident": "永住者",
@@ -1153,6 +1247,53 @@ struct LocalizationData {
             // その他の未翻訳箇所
             "no_documents_found": "No documents found",
             "try_different_search": "Try different search criteria",
+            
+            // Step Details
+            "step1_title": "Document Preparation",
+            "step1_description": "Prepare documents required for naturalization application",
+            "step1_detail1": "Verify passport validity",
+            "step1_detail2": "Obtain birth certificate",
+            "step1_detail3": "Obtain nationality certificate",
+            "step1_detail4": "Verify residence card",
+            "step1_required_doc1": "Passport",
+            "step1_required_doc2": "Birth Certificate",
+            "step1_tips": "Use the most recent documents",
+            
+            "step2_title": "Application Form Creation",
+            "step2_description": "Create naturalization permission application form",
+            "step2_detail1": "Fill out application form",
+            "step2_detail2": "Attach required documents",
+            "step2_detail3": "Create application reason statement",
+            "step2_required_doc1": "Naturalization Application Form",
+            "step2_required_doc2": "Application Reason Statement",
+            "step2_tips": "Fill out carefully and check for mistakes",
+            
+            "step3_title": "Legal Affairs Bureau Submission",
+            "step3_description": "Submit application to Legal Affairs Bureau",
+            "step3_detail1": "Confirm nearest Legal Affairs Bureau",
+            "step3_detail2": "Submit application form",
+            "step3_detail3": "Confirm receipt number",
+            "step3_required_doc1": "Complete application set",
+            "step3_required_doc2": "Personal identification documents",
+            "step3_tips": "Don't forget to check documents before submission",
+            
+            "step4_title": "Document Review",
+            "step4_description": "Review of submitted documents",
+            "step4_detail1": "Formal review of documents",
+            "step4_detail2": "Substantive review of content",
+            "step4_detail3": "Request for additional documents",
+            "step4_required_doc1": "Additional documents (if required)",
+            "step4_required_doc2": "Corrected documents (if required)",
+            "step4_tips": "Respond promptly if additional documents are requested",
+            
+            "step5_title": "Interview Preparation",
+            "step5_description": "Prepare for the interview",
+            "step5_detail1": "Confirm interview schedule",
+            "step5_detail2": "Prepare interview content",
+            "step5_detail3": "Prepare required documents",
+            "step5_required_doc1": "Personal identification documents",
+            "step5_required_doc2": "Additional documents",
+            "step5_tips": "It's important to answer honestly during the interview",
             "criminal_record_explanation": "No criminal record, paying taxes, no traffic violations, etc.",
             "expired": "Expired",
             "days_later": "%d days later",
@@ -1358,6 +1499,53 @@ struct LocalizationData {
             "interview_q18": "您还有其他问题吗？",
             "interview_a18": "没有特别的问题。",
             "interview_tip18": "请简洁回答。",
+            
+            // Step Details
+            "step1_title": "文件准备",
+            "step1_description": "准备归化申请所需的文件",
+            "step1_detail1": "确认护照有效性",
+            "step1_detail2": "取得出生证明",
+            "step1_detail3": "取得国籍证明",
+            "step1_detail4": "确认居留卡",
+            "step1_required_doc1": "护照",
+            "step1_required_doc2": "出生证明",
+            "step1_tips": "请使用最新的文件",
+            
+            "step2_title": "申请表制作",
+            "step2_description": "制作归化许可申请表",
+            "step2_detail1": "填写申请表",
+            "step2_detail2": "附上必要文件",
+            "step2_detail3": "制作申请理由书",
+            "step2_required_doc1": "归化申请表",
+            "step2_required_doc2": "申请理由书",
+            "step2_tips": "请仔细填写并检查是否有错误",
+            
+            "step3_title": "法务局提交",
+            "step3_description": "向法务局提交申请",
+            "step3_detail1": "确认最近的法务局",
+            "step3_detail2": "提交申请表",
+            "step3_detail3": "确认受理号码",
+            "step3_required_doc1": "完整申请表",
+            "step3_required_doc2": "身份证明文件",
+            "step3_tips": "提交前请勿忘记检查文件",
+            
+            "step4_title": "文件审查",
+            "step4_description": "对提交的文件进行审查",
+            "step4_detail1": "文件形式审查",
+            "step4_detail2": "内容实质审查",
+            "step4_detail3": "要求追加文件",
+            "step4_required_doc1": "追加文件（如需要）",
+            "step4_required_doc2": "修正文件（如需要）",
+            "step4_tips": "如被要求追加文件，请迅速应对",
+            
+            "step5_title": "面试准备",
+            "step5_description": "为面试做准备",
+            "step5_detail1": "确认面试日程",
+            "step5_detail2": "准备面试内容",
+            "step5_detail3": "准备必要文件",
+            "step5_required_doc1": "身份证明文件",
+            "step5_required_doc2": "追加文件",
+            "step5_tips": "面试时诚实回答很重要",
             
             // Document Checklist
             "document_checklist_title": "文件清单",
