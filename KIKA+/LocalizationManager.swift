@@ -69,7 +69,8 @@ class LocalizationManager: ObservableObject {
     }
     
     func localizedString(_ key: LocalizationKey) -> String {
-        return LocalizationData.strings[currentLanguage]?[key.rawValue] ?? key.rawValue
+        let result = LocalizationData.strings[.japanese]?[key.rawValue] ?? key.rawValue
+        return result
     }
 }
 
