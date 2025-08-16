@@ -55,6 +55,9 @@ class LocalizationManager: ObservableObject {
         if let savedLanguage = UserDefaults.standard.string(forKey: "selectedLanguage"),
            let language = Language(rawValue: savedLanguage) {
             currentLanguage = language
+        } else {
+            // デフォルトは日本語
+            currentLanguage = .japanese
         }
     }
     
@@ -69,7 +72,7 @@ class LocalizationManager: ObservableObject {
     }
     
     func localizedString(_ key: LocalizationKey) -> String {
-        let result = LocalizationData.strings[.japanese]?[key.rawValue] ?? key.rawValue
+        let result = LocalizationData.strings[currentLanguage]?[key.rawValue] ?? key.rawValue
         return result
     }
 }
