@@ -410,11 +410,48 @@ enum LocalizationKey: String, CaseIterable, RawRepresentable {
     case akitaLegalOffice = "akita_legal_office"
     case yamagataLegalOffice = "yamagata_legal_office"
     case fukushimaLegalOffice = "fukushima_legal_office"
+    case ibarakiLegalOffice = "ibaraki_legal_office"
+    case tochigiLegalOffice = "tochigi_legal_office"
+    case gunmaLegalOffice = "gunma_legal_office"
+    case chibaLegalOffice = "chiba_legal_office"
     case tokyoLegalOffice = "tokyo_legal_office"
     case tokyoShinjukuOffice = "tokyo_shinjuku_office"
     case tokyoTachikawaOffice = "tokyo_tachikawa_office"
     case yokohamaLegalOffice = "yokohama_legal_office"
     case kawasakiLegalOffice = "kawasaki_legal_office"
+    case niigataLegalOffice = "niigata_legal_office"
+    case toyamaLegalOffice = "toyama_legal_office"
+    case kanazawaLegalOffice = "kanazawa_legal_office"
+    case fukuiLegalOffice = "fukui_legal_office"
+    case yamanashiLegalOffice = "yamanashi_legal_office"
+    case naganoLegalOffice = "nagano_legal_office"
+    case gifuLegalOffice = "gifu_legal_office"
+    case shizuokaLegalOffice = "shizuoka_legal_office"
+    case nagoyaLegalOffice = "nagoya_legal_office"
+    case mieLegalOffice = "mie_legal_office"
+    case otsuLegalOffice = "otsu_legal_office"
+    case kyotoLegalOffice = "kyoto_legal_office"
+    case osakaLegalOffice = "osaka_legal_office"
+    case kobeLegalOffice = "kobe_legal_office"
+    case naraLegalOffice = "nara_legal_office"
+    case wakayamaLegalOffice = "wakayama_legal_office"
+    case tottoriLegalOffice = "tottori_legal_office"
+    case matsueLegalOffice = "matsue_legal_office"
+    case okayamaLegalOffice = "okayama_legal_office"
+    case hiroshimaLegalOffice = "hiroshima_legal_office"
+    case yamaguchiLegalOffice = "yamaguchi_legal_office"
+    case tokushimaLegalOffice = "tokushima_legal_office"
+    case takamatsuLegalOffice = "takamatsu_legal_office"
+    case matsuyamaLegalOffice = "matsuyama_legal_office"
+    case kochiLegalOffice = "kochi_legal_office"
+    case fukuokaLegalOffice = "fukuoka_legal_office"
+    case sagaLegalOffice = "saga_legal_office"
+    case nagasakiLegalOffice = "nagasaki_legal_office"
+    case kumamotoLegalOffice = "kumamoto_legal_office"
+    case oitaLegalOffice = "oita_legal_office"
+    case miyazakiLegalOffice = "miyazaki_legal_office"
+    case kagoshimaLegalOffice = "kagoshima_legal_office"
+    case nahaLegalOffice = "naha_legal_office"
     case saitamaLegalOffice = "saitama_legal_office"
     
     // 都道府県名
@@ -425,8 +462,45 @@ enum LocalizationKey: String, CaseIterable, RawRepresentable {
     case akita = "akita"
     case yamagata = "yamagata"
     case fukushima = "fukushima"
+    case ibaraki = "ibaraki"
+    case tochigi = "tochigi"
+    case gunma = "gunma"
+    case chiba = "chiba"
     case tokyo = "tokyo"
     case kanagawa = "kanagawa"
+    case niigata = "niigata"
+    case toyama = "toyama"
+    case ishikawa = "ishikawa"
+    case fukui = "fukui"
+    case yamanashi = "yamanashi"
+    case nagano = "nagano"
+    case gifu = "gifu"
+    case shizuoka = "shizuoka"
+    case aichi = "aichi"
+    case mie = "mie"
+    case shiga = "shiga"
+    case kyoto = "kyoto"
+    case osaka = "osaka"
+    case hyogo = "hyogo"
+    case nara = "nara"
+    case wakayama = "wakayama"
+    case tottori = "tottori"
+    case shimane = "shimane"
+    case okayama = "okayama"
+    case hiroshima = "hiroshima"
+    case yamaguchi = "yamaguchi"
+    case tokushima = "tokushima"
+    case kagawa = "kagawa"
+    case ehime = "ehime"
+    case kochi = "kochi"
+    case fukuoka = "fukuoka"
+    case saga = "saga"
+    case nagasaki = "nagasaki"
+    case kumamoto = "kumamoto"
+    case oita = "oita"
+    case miyazaki = "miyazaki"
+    case kagoshima = "kagoshima"
+    case okinawa = "okinawa"
     case saitama = "saitama"
     
     // 法務局サービス
@@ -877,11 +951,48 @@ struct LocalizationData {
             "akita_legal_office": "秋田地方法務局",
             "yamagata_legal_office": "山形地方法務局",
             "fukushima_legal_office": "福島地方法務局",
+            "ibaraki_legal_office": "水戸地方法務局",
+            "tochigi_legal_office": "宇都宮地方法務局",
+            "gunma_legal_office": "前橋地方法務局",
+            "chiba_legal_office": "千葉地方法務局",
             "tokyo_legal_office": "東京法務局",
             "tokyo_shinjuku_office": "東京法務局新宿出張所",
             "tokyo_tachikawa_office": "東京法務局立川出張所",
             "yokohama_legal_office": "横浜地方法務局",
             "kawasaki_legal_office": "川崎地方法務局",
+            "niigata_legal_office": "新潟地方法務局",
+            "toyama_legal_office": "富山地方法務局",
+            "kanazawa_legal_office": "金沢地方法務局",
+            "fukui_legal_office": "福井地方法務局",
+            "yamanashi_legal_office": "甲府地方法務局",
+            "nagano_legal_office": "長野地方法務局",
+            "gifu_legal_office": "岐阜地方法務局",
+            "shizuoka_legal_office": "静岡地方法務局",
+            "nagoya_legal_office": "名古屋法務局",
+            "mie_legal_office": "津地方法務局",
+            "otsu_legal_office": "大津地方法務局",
+            "kyoto_legal_office": "京都地方法務局",
+            "osaka_legal_office": "大阪法務局",
+            "kobe_legal_office": "神戸地方法務局",
+            "nara_legal_office": "奈良地方法務局",
+            "wakayama_legal_office": "和歌山地方法務局",
+            "tottori_legal_office": "鳥取地方法務局",
+            "matsue_legal_office": "松江地方法務局",
+            "okayama_legal_office": "岡山地方法務局",
+            "hiroshima_legal_office": "広島法務局",
+            "yamaguchi_legal_office": "山口地方法務局",
+            "tokushima_legal_office": "徳島地方法務局",
+            "takamatsu_legal_office": "高松法務局",
+            "matsuyama_legal_office": "松山地方法務局",
+            "kochi_legal_office": "高知地方法務局",
+            "fukuoka_legal_office": "福岡法務局",
+            "saga_legal_office": "佐賀地方法務局",
+            "nagasaki_legal_office": "長崎地方法務局",
+            "kumamoto_legal_office": "熊本地方法務局",
+            "oita_legal_office": "大分地方法務局",
+            "miyazaki_legal_office": "宮崎地方法務局",
+            "kagoshima_legal_office": "鹿児島地方法務局",
+            "naha_legal_office": "那覇法務局",
             "saitama_legal_office": "さいたま地方法務局",
             
             // 都道府県名
@@ -892,8 +1003,45 @@ struct LocalizationData {
             "akita": "秋田県",
             "yamagata": "山形県",
             "fukushima": "福島県",
+            "ibaraki": "茨城県",
+            "tochigi": "栃木県",
+            "gunma": "群馬県",
+            "chiba": "千葉県",
             "tokyo": "東京都",
             "kanagawa": "神奈川県",
+            "niigata": "新潟県",
+            "toyama": "富山県",
+            "ishikawa": "石川県",
+            "fukui": "福井県",
+            "yamanashi": "山梨県",
+            "nagano": "長野県",
+            "gifu": "岐阜県",
+            "shizuoka": "静岡県",
+            "aichi": "愛知県",
+            "mie": "三重県",
+            "shiga": "滋賀県",
+            "kyoto": "京都府",
+            "osaka": "大阪府",
+            "hyogo": "兵庫県",
+            "nara": "奈良県",
+            "wakayama": "和歌山県",
+            "tottori": "鳥取県",
+            "shimane": "島根県",
+            "okayama": "岡山県",
+            "hiroshima": "広島県",
+            "yamaguchi": "山口県",
+            "tokushima": "徳島県",
+            "kagawa": "香川県",
+            "ehime": "愛媛県",
+            "kochi": "高知県",
+            "fukuoka": "福岡県",
+            "saga": "佐賀県",
+            "nagasaki": "長崎県",
+            "kumamoto": "熊本県",
+            "oita": "大分県",
+            "miyazaki": "宮崎県",
+            "kagoshima": "鹿児島県",
+            "okinawa": "沖縄県",
             "saitama": "埼玉県",
             
             // 法務局サービス
@@ -1377,11 +1525,48 @@ struct LocalizationData {
             "akita_legal_office": "Akita District Legal Affairs Bureau",
             "yamagata_legal_office": "Yamagata District Legal Affairs Bureau",
             "fukushima_legal_office": "Fukushima District Legal Affairs Bureau",
+            "ibaraki_legal_office": "Mito District Legal Affairs Bureau",
+            "tochigi_legal_office": "Utsunomiya District Legal Affairs Bureau",
+            "gunma_legal_office": "Maebashi District Legal Affairs Bureau",
+            "chiba_legal_office": "Chiba District Legal Affairs Bureau",
             "tokyo_legal_office": "Tokyo Legal Affairs Bureau",
             "tokyo_shinjuku_office": "Tokyo Legal Affairs Bureau Shinjuku Branch",
             "tokyo_tachikawa_office": "Tokyo Legal Affairs Bureau Tachikawa Branch",
             "yokohama_legal_office": "Yokohama District Legal Affairs Bureau",
             "kawasaki_legal_office": "Kawasaki District Legal Affairs Bureau",
+            "niigata_legal_office": "Niigata District Legal Affairs Bureau",
+            "toyama_legal_office": "Toyama District Legal Affairs Bureau",
+            "kanazawa_legal_office": "Kanazawa District Legal Affairs Bureau",
+            "fukui_legal_office": "Fukui District Legal Affairs Bureau",
+            "yamanashi_legal_office": "Kofu District Legal Affairs Bureau",
+            "nagano_legal_office": "Nagano District Legal Affairs Bureau",
+            "gifu_legal_office": "Gifu District Legal Affairs Bureau",
+            "shizuoka_legal_office": "Shizuoka District Legal Affairs Bureau",
+            "nagoya_legal_office": "Nagoya Legal Affairs Bureau",
+            "mie_legal_office": "Tsu District Legal Affairs Bureau",
+            "otsu_legal_office": "Otsu District Legal Affairs Bureau",
+            "kyoto_legal_office": "Kyoto District Legal Affairs Bureau",
+            "osaka_legal_office": "Osaka Legal Affairs Bureau",
+            "kobe_legal_office": "Kobe District Legal Affairs Bureau",
+            "nara_legal_office": "Nara District Legal Affairs Bureau",
+            "wakayama_legal_office": "Wakayama District Legal Affairs Bureau",
+            "tottori_legal_office": "Tottori District Legal Affairs Bureau",
+            "matsue_legal_office": "Matsue District Legal Affairs Bureau",
+            "okayama_legal_office": "Okayama District Legal Affairs Bureau",
+            "hiroshima_legal_office": "Hiroshima Legal Affairs Bureau",
+            "yamaguchi_legal_office": "Yamaguchi District Legal Affairs Bureau",
+            "tokushima_legal_office": "Tokushima District Legal Affairs Bureau",
+            "takamatsu_legal_office": "Takamatsu Legal Affairs Bureau",
+            "matsuyama_legal_office": "Matsuyama District Legal Affairs Bureau",
+            "kochi_legal_office": "Kochi District Legal Affairs Bureau",
+            "fukuoka_legal_office": "Fukuoka Legal Affairs Bureau",
+            "saga_legal_office": "Saga District Legal Affairs Bureau",
+            "nagasaki_legal_office": "Nagasaki District Legal Affairs Bureau",
+            "kumamoto_legal_office": "Kumamoto District Legal Affairs Bureau",
+            "oita_legal_office": "Oita District Legal Affairs Bureau",
+            "miyazaki_legal_office": "Miyazaki District Legal Affairs Bureau",
+            "kagoshima_legal_office": "Kagoshima District Legal Affairs Bureau",
+            "naha_legal_office": "Naha Legal Affairs Bureau",
             "saitama_legal_office": "Saitama District Legal Affairs Bureau",
             
             // 都道府県名
@@ -1392,8 +1577,45 @@ struct LocalizationData {
             "akita": "Akita Prefecture",
             "yamagata": "Yamagata Prefecture",
             "fukushima": "Fukushima Prefecture",
+            "ibaraki": "Ibaraki Prefecture",
+            "tochigi": "Tochigi Prefecture",
+            "gunma": "Gunma Prefecture",
+            "chiba": "Chiba Prefecture",
             "tokyo": "Tokyo",
             "kanagawa": "Kanagawa Prefecture",
+            "niigata": "Niigata Prefecture",
+            "toyama": "Toyama Prefecture",
+            "ishikawa": "Ishikawa Prefecture",
+            "fukui": "Fukui Prefecture",
+            "yamanashi": "Yamanashi Prefecture",
+            "nagano": "Nagano Prefecture",
+            "gifu": "Gifu Prefecture",
+            "shizuoka": "Shizuoka Prefecture",
+            "aichi": "Aichi Prefecture",
+            "mie": "Mie Prefecture",
+            "shiga": "Shiga Prefecture",
+            "kyoto": "Kyoto Prefecture",
+            "osaka": "Osaka Prefecture",
+            "hyogo": "Hyogo Prefecture",
+            "nara": "Nara Prefecture",
+            "wakayama": "Wakayama Prefecture",
+            "tottori": "Tottori Prefecture",
+            "shimane": "Shimane Prefecture",
+            "okayama": "Okayama Prefecture",
+            "hiroshima": "Hiroshima Prefecture",
+            "yamaguchi": "Yamaguchi Prefecture",
+            "tokushima": "Tokushima Prefecture",
+            "kagawa": "Kagawa Prefecture",
+            "ehime": "Ehime Prefecture",
+            "kochi": "Kochi Prefecture",
+            "fukuoka": "Fukuoka Prefecture",
+            "saga": "Saga Prefecture",
+            "nagasaki": "Nagasaki Prefecture",
+            "kumamoto": "Kumamoto Prefecture",
+            "oita": "Oita Prefecture",
+            "miyazaki": "Miyazaki Prefecture",
+            "kagoshima": "Kagoshima Prefecture",
+            "okinawa": "Okinawa Prefecture",
             "saitama": "Saitama Prefecture",
             
             // 法務局サービス

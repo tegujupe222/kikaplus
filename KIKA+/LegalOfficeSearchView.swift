@@ -29,8 +29,45 @@ struct LegalOfficeSearchView: View {
         LocalizationManager.shared.localizedString(.akita),
         LocalizationManager.shared.localizedString(.yamagata),
         LocalizationManager.shared.localizedString(.fukushima),
+        LocalizationManager.shared.localizedString(.ibaraki),
+        LocalizationManager.shared.localizedString(.tochigi),
+        LocalizationManager.shared.localizedString(.gunma),
+        LocalizationManager.shared.localizedString(.chiba),
         LocalizationManager.shared.localizedString(.tokyo),
         LocalizationManager.shared.localizedString(.kanagawa),
+        LocalizationManager.shared.localizedString(.niigata),
+        LocalizationManager.shared.localizedString(.toyama),
+        LocalizationManager.shared.localizedString(.ishikawa),
+        LocalizationManager.shared.localizedString(.fukui),
+        LocalizationManager.shared.localizedString(.yamanashi),
+        LocalizationManager.shared.localizedString(.nagano),
+        LocalizationManager.shared.localizedString(.gifu),
+        LocalizationManager.shared.localizedString(.shizuoka),
+        LocalizationManager.shared.localizedString(.aichi),
+        LocalizationManager.shared.localizedString(.mie),
+        LocalizationManager.shared.localizedString(.shiga),
+        LocalizationManager.shared.localizedString(.kyoto),
+        LocalizationManager.shared.localizedString(.osaka),
+        LocalizationManager.shared.localizedString(.hyogo),
+        LocalizationManager.shared.localizedString(.nara),
+        LocalizationManager.shared.localizedString(.wakayama),
+        LocalizationManager.shared.localizedString(.tottori),
+        LocalizationManager.shared.localizedString(.shimane),
+        LocalizationManager.shared.localizedString(.okayama),
+        LocalizationManager.shared.localizedString(.hiroshima),
+        LocalizationManager.shared.localizedString(.yamaguchi),
+        LocalizationManager.shared.localizedString(.tokushima),
+        LocalizationManager.shared.localizedString(.kagawa),
+        LocalizationManager.shared.localizedString(.ehime),
+        LocalizationManager.shared.localizedString(.kochi),
+        LocalizationManager.shared.localizedString(.fukuoka),
+        LocalizationManager.shared.localizedString(.saga),
+        LocalizationManager.shared.localizedString(.nagasaki),
+        LocalizationManager.shared.localizedString(.kumamoto),
+        LocalizationManager.shared.localizedString(.oita),
+        LocalizationManager.shared.localizedString(.miyazaki),
+        LocalizationManager.shared.localizedString(.kagoshima),
+        LocalizationManager.shared.localizedString(.okinawa),
         LocalizationManager.shared.localizedString(.saitama)
     ]
 }
@@ -150,6 +187,7 @@ struct LegalOffice {
 
 var legalOffices: [LegalOffice] {
     [
+        // 北海道
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.sapporoLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.hokkaido),
@@ -185,6 +223,8 @@ var legalOffices: [LegalOffice] {
                 LocalizationManager.shared.localizedString(.registrationConsultation)
             ]
         ),
+        
+        // 東北地方
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.aomoriLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.aomori),
@@ -200,6 +240,23 @@ var legalOffices: [LegalOffice] {
             services: [
                 LocalizationManager.shared.localizedString(.naturalizationConsultation),
                 LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.moriokaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.iwate),
+            address: "盛岡市内丸10-1",
+            phone: "019-624-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 39.7036,
+            longitude: 141.1527,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
             ]
         ),
         LegalOffice(
@@ -219,6 +276,128 @@ var legalOffices: [LegalOffice] {
                 LocalizationManager.shared.localizedString(.nationalityConsultation),
                 LocalizationManager.shared.localizedString(.familyRegisterConsultation),
                 LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.akitaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.akita),
+            address: "秋田市大町3-1-1",
+            phone: "018-862-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 39.7186,
+            longitude: 140.1024,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.yamagataLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.yamagata),
+            address: "山形市本町1-1-1",
+            phone: "023-632-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 38.2554,
+            longitude: 140.3399,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.fukushimaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.fukushima),
+            address: "福島市杉妻町5-75",
+            phone: "024-534-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 37.7503,
+            longitude: 140.4676,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        
+        // 関東地方
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.ibarakiLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.ibaraki),
+            address: "水戸市三の丸1-5-38",
+            phone: "029-221-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 36.3418,
+            longitude: 140.4468,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.tochigiLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.tochigi),
+            address: "宇都宮市本町1-1-1",
+            phone: "028-632-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 36.5657,
+            longitude: 139.8836,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.gunmaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.gunma),
+            address: "前橋市大手町1-1-1",
+            phone: "027-223-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 36.3911,
+            longitude: 139.0608,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.chibaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.chiba),
+            address: "千葉市中央区市場町1-1",
+            phone: "043-245-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 35.6073,
+            longitude: 140.1064,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.nationalityConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
             ]
         ),
         LegalOffice(
@@ -272,6 +451,594 @@ var legalOffices: [LegalOffice] {
             services: [
                 LocalizationManager.shared.localizedString(.naturalizationConsultation),
                 LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        
+        // 中部地方
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.niigataLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.niigata),
+            address: "新潟市中央区東大通1-1-1",
+            phone: "025-228-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 37.9022,
+            longitude: 139.0232,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.toyamaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.toyama),
+            address: "富山市新桜町7-38",
+            phone: "076-441-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 36.6953,
+            longitude: 137.2113,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.kanazawaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.ishikawa),
+            address: "金沢市広坂1-1-1",
+            phone: "076-231-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 36.5613,
+            longitude: 136.6562,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.nationalityConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.fukuiLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.fukui),
+            address: "福井市大手3-17-1",
+            phone: "0776-21-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 36.0652,
+            longitude: 136.2217,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.yamanashiLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.yamanashi),
+            address: "甲府市丸の内1-1-1",
+            phone: "055-237-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 35.6642,
+            longitude: 138.5685,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.naganoLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.nagano),
+            address: "長野市大字鶴賀緑町1613",
+            phone: "026-232-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 36.6513,
+            longitude: 138.1812,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.gifuLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.gifu),
+            address: "岐阜市司町40-5",
+            phone: "058-265-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 35.4233,
+            longitude: 136.7607,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.shizuokaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.shizuoka),
+            address: "静岡市葵区追手町9-6",
+            phone: "054-221-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 34.9769,
+            longitude: 138.3831,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.nationalityConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.nagoyaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.aichi),
+            address: "名古屋市中区三の丸2-2-1",
+            phone: "052-951-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 35.1815,
+            longitude: 136.9066,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.nationalityConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.mieLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.mie),
+            address: "津市丸之内27-45",
+            phone: "059-228-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 34.7303,
+            longitude: 136.5086,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        
+        // 近畿地方
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.otsuLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.shiga),
+            address: "大津市京町4-1-1",
+            phone: "077-522-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 35.0045,
+            longitude: 135.8683,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.kyotoLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.kyoto),
+            address: "京都市上京区下立売通新町西入薮ノ内町",
+            phone: "075-451-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 35.0116,
+            longitude: 135.7681,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.nationalityConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.osakaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.osaka),
+            address: "大阪市中央区大手前1-3-49",
+            phone: "06-6941-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 34.6863,
+            longitude: 135.5197,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.nationalityConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.kobeLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.hyogo),
+            address: "神戸市中央区下山手通4-4-1",
+            phone: "078-331-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 34.6901,
+            longitude: 135.1955,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.naraLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.nara),
+            address: "奈良市登大路町30",
+            phone: "0742-22-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 34.6851,
+            longitude: 135.8328,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.wakayamaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.wakayama),
+            address: "和歌山市七番丁23",
+            phone: "073-422-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 34.2261,
+            longitude: 135.1675,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        
+        // 中国地方
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.tottoriLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.tottori),
+            address: "鳥取市東町1-220",
+            phone: "0857-22-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 35.5039,
+            longitude: 134.2383,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.matsueLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.shimane),
+            address: "松江市殿町1",
+            phone: "0852-21-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 35.4723,
+            longitude: 133.0505,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.okayamaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.okayama),
+            address: "岡山市北区大供1-1-1",
+            phone: "086-223-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 34.6618,
+            longitude: 133.9347,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.nationalityConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.hiroshimaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.hiroshima),
+            address: "広島市中区上八丁堀6-30",
+            phone: "082-221-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 34.3853,
+            longitude: 132.4553,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.nationalityConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.yamaguchiLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.yamaguchi),
+            address: "山口市滝町1-1",
+            phone: "083-922-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 34.1858,
+            longitude: 131.4714,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        
+        // 四国地方
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.tokushimaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.tokushima),
+            address: "徳島市新町橋2-24",
+            phone: "088-622-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 34.0658,
+            longitude: 134.5593,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.takamatsuLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.kagawa),
+            address: "高松市番町1-8-15",
+            phone: "087-831-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 34.3401,
+            longitude: 134.0434,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.nationalityConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.matsuyamaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.ehime),
+            address: "松山市一番町3-4-1",
+            phone: "089-921-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 33.8416,
+            longitude: 132.7660,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.kochiLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.kochi),
+            address: "高知市丸ノ内2-1-45",
+            phone: "088-823-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 33.5597,
+            longitude: 133.5311,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        
+        // 九州地方
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.fukuokaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.fukuoka),
+            address: "福岡市博多区東公園7-7",
+            phone: "092-471-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 33.5902,
+            longitude: 130.4017,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.nationalityConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.sagaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.saga),
+            address: "佐賀市城内1-1-59",
+            phone: "0952-24-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 33.2494,
+            longitude: 130.2988,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.nagasakiLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.nagasaki),
+            address: "長崎市江戸町2-13",
+            phone: "095-822-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 32.7503,
+            longitude: 129.8777,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.kumamotoLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.kumamoto),
+            address: "熊本市中央区手取本町1-1",
+            phone: "096-326-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 32.7898,
+            longitude: 130.7417,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.nationalityConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.oitaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.oita),
+            address: "大分市府内町1-1-1",
+            phone: "097-536-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 33.2381,
+            longitude: 131.6126,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.miyazakiLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.miyazaki),
+            address: "宮崎市橘通東2-10-1",
+            phone: "0985-27-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 31.9112,
+            longitude: 131.4239,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.kagoshimaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.kagoshima),
+            address: "鹿児島市山下町5-1",
+            phone: "099-222-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 31.5602,
+            longitude: 130.5581,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        
+        // 沖縄地方
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.nahaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.okinawa),
+            address: "那覇市泉崎1-2-2",
+            phone: "098-866-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 26.2124,
+            longitude: 127.6809,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.nationalityConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
             ]
         )
     ]
