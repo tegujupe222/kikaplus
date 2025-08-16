@@ -676,7 +676,7 @@ struct LocalizationData {
             "original_text": "原文",
             "show_template": "テンプレート表示",
             "translate": "翻訳",
-            "faq": "よくある質問"
+            "faq": "よくある質問",
             
             // 通知管理
             "no_reminders": "リマインダーがありません",
@@ -993,7 +993,6 @@ struct LocalizationData {
             "weekly_reports": "週次レポート",
             
             // 翻訳サポート
-            "show_template": "テンプレート表示",
             "diagnosis_step_ng1_title": "所需文件缺失",
             "diagnosis_step_ng1_desc": "请确保已准备好所有申请所需的文件。",
             "diagnosis_step_ng2_title": "在留期间不足",
