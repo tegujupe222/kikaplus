@@ -234,7 +234,7 @@ struct SettingsView: View {
                                 title: localizationManager.localizedString(.version),
                                 action: {}
                             ) {
-                                Text("1.0.0")
+                                Text(localizationManager.localizedString(.version))
                                     .font(.system(size: 14, weight: .medium))
                                     .foregroundColor(.secondary)
                             }

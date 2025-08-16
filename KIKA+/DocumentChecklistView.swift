@@ -175,7 +175,7 @@ struct DocumentChecklistView: View {
                         
                         Spacer()
                         
-                        Text("\(Int(completionProgress * 100))%")
+                        Text(localizationManager.localizedString(.percentageFormat, arguments: ["\(Int(completionProgress * 100))"]))
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.blue)
                     }

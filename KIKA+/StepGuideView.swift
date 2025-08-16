@@ -228,7 +228,7 @@ struct StepCard: View {
                         
                         ForEach(step.details, id: \.self) { detail in
                             HStack(alignment: .top, spacing: 8) {
-                                Text("•")
+                                Text(localizationManager.localizedString(.bulletPoint))
                                     .foregroundColor(.blue)
                                 Text(detail)
                                     .font(.subheadline)

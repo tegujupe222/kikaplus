@@ -365,7 +365,7 @@ struct TemplateView: View {
         NavigationView {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
-                    Text("\(document) - \(language)\(localizationManager.localizedString(.templateExample))")
+                    Text(localizationManager.localizedString(.templateExampleTitle, arguments: [document, language]))
                         .font(.title2)
                         .fontWeight(.bold)
                     

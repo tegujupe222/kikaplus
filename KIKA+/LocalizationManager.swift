@@ -75,6 +75,11 @@ class LocalizationManager: ObservableObject {
         let result = LocalizationData.strings[currentLanguage]?[key.rawValue] ?? key.rawValue
         return result
     }
+    
+    func localizedString(_ key: LocalizationKey, arguments: [String]) -> String {
+        let format = LocalizationData.strings[currentLanguage]?[key.rawValue] ?? key.rawValue
+        return String(format: format, arguments: arguments)
+    }
 }
 
 enum LocalizationKey: String, CaseIterable, RawRepresentable {
@@ -204,7 +209,11 @@ enum LocalizationKey: String, CaseIterable, RawRepresentable {
     case step5Tips = "step5_tips"
     
     // その他の画面用
+    case bulletPoint = "bullet_point"
+    case templateExampleTitle = "template_example_title"
     case progressStatus = "progress_status"
+    case progressFormat = "progress_format"
+    case percentageFormat = "percentage_format"
     case stepCompleted = "step_completed"
     case detailedSteps = "detailed_steps"
     case filter = "filter"
@@ -824,6 +833,10 @@ struct LocalizationData {
             "step5_required_doc1": "本人確認書類",
             "step5_required_doc2": "追加書類",
             "step5_tips": "面接では正直に答えることが重要です",
+            "bullet_point": "•",
+            "template_example_title": "%@ - %@テンプレート例",
+            "progress_format": "%d / %d",
+            "percentage_format": "%d%%",
             "occupation": "職業",
             "email_address": "メールアドレス",
             "permanent_resident": "永住者",
@@ -1294,6 +1307,10 @@ struct LocalizationData {
             "step5_required_doc1": "Personal identification documents",
             "step5_required_doc2": "Additional documents",
             "step5_tips": "It's important to answer honestly during the interview",
+            "bullet_point": "•",
+            "template_example_title": "%@ - %@ Template Example",
+            "progress_format": "%d / %d",
+            "percentage_format": "%d%%",
             "criminal_record_explanation": "No criminal record, paying taxes, no traffic violations, etc.",
             "expired": "Expired",
             "days_later": "%d days later",
@@ -1546,6 +1563,10 @@ struct LocalizationData {
             "step5_required_doc1": "身份证明文件",
             "step5_required_doc2": "追加文件",
             "step5_tips": "面试时诚实回答很重要",
+            "bullet_point": "•",
+            "template_example_title": "%@ - %@模板示例",
+            "progress_format": "%d / %d",
+            "percentage_format": "%d%%",
             
             // Document Checklist
             "document_checklist_title": "文件清单",

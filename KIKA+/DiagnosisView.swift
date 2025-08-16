@@ -28,13 +28,13 @@ struct DiagnosisView: View {
                 // プログレスバー
                 VStack(spacing: 8) {
                     HStack {
-                        Text("\(currentQuestionIndex + 1) / \(questionKeys.count)")
+                        Text(localizationManager.localizedString(.progressFormat, arguments: ["\(currentQuestionIndex + 1)", "\(questionKeys.count)"]))
                             .font(.system(size: 14, weight: .medium))
                             .foregroundColor(.secondary)
                         
                         Spacer()
                         
-                        Text("\(Int((Double(currentQuestionIndex + 1) / Double(questionKeys.count)) * 100))%")
+                        Text(localizationManager.localizedString(.percentageFormat, arguments: ["\(Int((Double(currentQuestionIndex + 1) / Double(questionKeys.count)) * 100))"]))
                             .font(.system(size: 14, weight: .medium))
                             .foregroundColor(.blue)
                     }
@@ -268,7 +268,7 @@ struct DiagnosisResultView: View {
                                 .font(.system(size: 24, weight: .bold, design: .rounded))
                                 .foregroundColor(.primary)
                             
-                            Text("\(eligibilityScore)%")
+                            Text(localizationManager.localizedString(.percentageFormat, arguments: ["\(eligibilityScore)"]))
                                 .font(.system(size: 56, weight: .bold, design: .rounded))
                                 .foregroundColor(statusColor)
                             
