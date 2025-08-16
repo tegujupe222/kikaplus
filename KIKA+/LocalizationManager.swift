@@ -69,7 +69,7 @@ class LocalizationManager: ObservableObject {
     }
     
     func localizedString(_ key: LocalizationKey) -> String {
-        return key.localizedString(for: currentLanguage)
+        return LocalizationData.strings[currentLanguage]?[key.rawValue] ?? key.rawValue
     }
 }
 
