@@ -109,7 +109,7 @@ struct StepGuideView: View {
                         Text(localizationManager.localizedString(.progressStatus))
                             .font(.headline)
                         Spacer()
-                        Text("\(completedSteps.count)/\(steps.count)\(localizationManager.localizedString(.stepCompleted))")
+                        Text(localizationManager.localizedString(.progressFormat, arguments: ["\(completedSteps.count)", "\(steps.count)"]) + localizationManager.localizedString(.stepCompleted))
                             .font(.caption)
                             .foregroundColor(.secondary)
                     }
@@ -240,7 +240,7 @@ struct StepCard: View {
                     HStack {
                         Image(systemName: "clock")
                             .foregroundColor(.orange)
-                        Text("\(localizationManager.localizedString(.estimatedTime)): \(step.estimatedTime)")
+                        Text(localizationManager.localizedString(.estimatedTime) + ": " + step.estimatedTime)
                             .font(.caption)
                         Spacer()
                     }

@@ -191,7 +191,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.sapporoLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.hokkaido),
-            address: "札幌市中央区北1条西13丁目",
+            address: LocalizationManager.shared.localizedString(.sapporoAddress),
             phone: "011-251-1101",
             fax: "",
             email: "",
@@ -209,7 +209,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.hakodateLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.hokkaido),
-            address: "函館市本町24-1",
+            address: LocalizationManager.shared.localizedString(.hakodateAddress),
             phone: "0138-23-1101",
             fax: "",
             email: "",
@@ -228,7 +228,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.aomoriLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.aomori),
-            address: "青森市新町1-3-1",
+            address: LocalizationManager.shared.localizedString(.aomoriAddress),
             phone: "017-722-1101",
             fax: "",
             email: "",
@@ -245,7 +245,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.moriokaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.iwate),
-            address: "盛岡市内丸10-1",
+            address: LocalizationManager.shared.localizedString(.moriokaAddress),
             phone: "019-624-1101",
             fax: "",
             email: "",
@@ -262,7 +262,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.sendaiLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.miyagi),
-            address: "仙台市青葉区本町3-3-1",
+            address: LocalizationManager.shared.localizedString(.sendaiAddress),
             phone: "022-221-1101",
             fax: "",
             email: "",
@@ -281,7 +281,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.akitaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.akita),
-            address: "秋田市大町3-1-1",
+            address: LocalizationManager.shared.localizedString(.akitaAddress),
             phone: "018-862-1101",
             fax: "",
             email: "",
@@ -298,7 +298,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.yamagataLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.yamagata),
-            address: "山形市本町1-1-1",
+            address: LocalizationManager.shared.localizedString(.yamagataAddress),
             phone: "023-632-1101",
             fax: "",
             email: "",
@@ -315,7 +315,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.fukushimaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.fukushima),
-            address: "福島市杉妻町5-75",
+            address: LocalizationManager.shared.localizedString(.fukushimaAddress),
             phone: "024-534-1101",
             fax: "",
             email: "",
@@ -334,7 +334,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.ibarakiLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.ibaraki),
-            address: "水戸市三の丸1-5-38",
+            address: LocalizationManager.shared.localizedString(.ibarakiAddress),
             phone: "029-221-1101",
             fax: "",
             email: "",
@@ -351,7 +351,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.tochigiLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.tochigi),
-            address: "宇都宮市本町1-1-1",
+            address: LocalizationManager.shared.localizedString(.tochigiAddress),
             phone: "028-632-1101",
             fax: "",
             email: "",
@@ -368,7 +368,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.gunmaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.gunma),
-            address: "前橋市大手町1-1-1",
+            address: LocalizationManager.shared.localizedString(.gunmaAddress),
             phone: "027-223-1101",
             fax: "",
             email: "",
@@ -385,7 +385,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.chibaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.chiba),
-            address: "千葉市中央区市場町1-1",
+            address: LocalizationManager.shared.localizedString(.chibaAddress),
             phone: "043-245-1101",
             fax: "",
             email: "",
@@ -403,7 +403,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.tokyoLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.tokyo),
-            address: "東京都千代田区霞が関1-1-1",
+            address: LocalizationManager.shared.localizedString(.tokyoAddress),
             phone: "03-3580-4111",
             fax: "",
             email: "",
@@ -422,7 +422,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.yokohamaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.kanagawa),
-            address: "横浜市中区山下町2",
+            address: LocalizationManager.shared.localizedString(.yokohamaAddress),
             phone: "045-201-1101",
             fax: "",
             email: "",
@@ -439,7 +439,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.saitamaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.saitama),
-            address: "さいたま市浦和区高砂3-15-1",
+            address: LocalizationManager.shared.localizedString(.saitamaAddress),
             phone: "048-822-1101",
             fax: "",
             email: "",
@@ -458,7 +458,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.niigataLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.niigata),
-            address: "新潟市中央区東大通1-1-1",
+            address: LocalizationManager.shared.localizedString(.niigataAddress),
             phone: "025-228-1101",
             fax: "",
             email: "",
@@ -475,7 +475,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.toyamaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.toyama),
-            address: "富山市新桜町7-38",
+            address: LocalizationManager.shared.localizedString(.toyamaAddress),
             phone: "076-441-1101",
             fax: "",
             email: "",
@@ -492,7 +492,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.kanazawaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.ishikawa),
-            address: "金沢市広坂1-1-1",
+            address: LocalizationManager.shared.localizedString(.kanazawaAddress),
             phone: "076-231-1101",
             fax: "",
             email: "",
@@ -510,7 +510,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.fukuiLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.fukui),
-            address: "福井市大手3-17-1",
+            address: LocalizationManager.shared.localizedString(.fukuiAddress),
             phone: "0776-21-1101",
             fax: "",
             email: "",
@@ -527,7 +527,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.yamanashiLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.yamanashi),
-            address: "甲府市丸の内1-1-1",
+            address: LocalizationManager.shared.localizedString(.yamanashiAddress),
             phone: "055-237-1101",
             fax: "",
             email: "",
@@ -544,7 +544,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.naganoLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.nagano),
-            address: "長野市大字鶴賀緑町1613",
+            address: LocalizationManager.shared.localizedString(.naganoAddress),
             phone: "026-232-1101",
             fax: "",
             email: "",
@@ -561,7 +561,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.gifuLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.gifu),
-            address: "岐阜市司町40-5",
+            address: LocalizationManager.shared.localizedString(.gifuAddress),
             phone: "058-265-1101",
             fax: "",
             email: "",
@@ -578,7 +578,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.shizuokaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.shizuoka),
-            address: "静岡市葵区追手町9-6",
+            address: LocalizationManager.shared.localizedString(.shizuokaAddress),
             phone: "054-221-1101",
             fax: "",
             email: "",
@@ -596,7 +596,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.nagoyaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.aichi),
-            address: "名古屋市中区三の丸2-2-1",
+            address: LocalizationManager.shared.localizedString(.nagoyaAddress),
             phone: "052-951-1101",
             fax: "",
             email: "",
@@ -615,7 +615,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.mieLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.mie),
-            address: "津市丸之内27-45",
+            address: LocalizationManager.shared.localizedString(.mieAddress),
             phone: "059-228-1101",
             fax: "",
             email: "",
@@ -634,7 +634,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.otsuLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.shiga),
-            address: "大津市京町4-1-1",
+            address: LocalizationManager.shared.localizedString(.otsuAddress),
             phone: "077-522-1101",
             fax: "",
             email: "",
@@ -651,7 +651,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.kyotoLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.kyoto),
-            address: "京都市上京区下立売通新町西入薮ノ内町",
+            address: LocalizationManager.shared.localizedString(.kyotoAddress),
             phone: "075-451-1101",
             fax: "",
             email: "",
@@ -669,7 +669,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.osakaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.osaka),
-            address: "大阪市中央区大手前1-3-49",
+            address: LocalizationManager.shared.localizedString(.osakaAddress),
             phone: "06-6941-1101",
             fax: "",
             email: "",
@@ -688,7 +688,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.kobeLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.hyogo),
-            address: "神戸市中央区下山手通4-4-1",
+            address: LocalizationManager.shared.localizedString(.kobeAddress),
             phone: "078-331-1101",
             fax: "",
             email: "",
@@ -705,7 +705,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.naraLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.nara),
-            address: "奈良市登大路町30",
+            address: LocalizationManager.shared.localizedString(.naraAddress),
             phone: "0742-22-1101",
             fax: "",
             email: "",
@@ -722,7 +722,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.wakayamaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.wakayama),
-            address: "和歌山市七番丁23",
+            address: LocalizationManager.shared.localizedString(.wakayamaAddress),
             phone: "073-422-1101",
             fax: "",
             email: "",
@@ -741,7 +741,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.tottoriLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.tottori),
-            address: "鳥取市東町1-220",
+            address: LocalizationManager.shared.localizedString(.tottoriAddress),
             phone: "0857-22-1101",
             fax: "",
             email: "",
@@ -758,7 +758,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.matsueLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.shimane),
-            address: "松江市殿町1",
+            address: LocalizationManager.shared.localizedString(.matsueAddress),
             phone: "0852-21-1101",
             fax: "",
             email: "",
@@ -775,7 +775,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.okayamaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.okayama),
-            address: "岡山市北区大供1-1-1",
+            address: LocalizationManager.shared.localizedString(.okayamaAddress),
             phone: "086-223-1101",
             fax: "",
             email: "",
@@ -793,7 +793,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.hiroshimaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.hiroshima),
-            address: "広島市中区上八丁堀6-30",
+            address: LocalizationManager.shared.localizedString(.hiroshimaAddress),
             phone: "082-221-1101",
             fax: "",
             email: "",
@@ -812,7 +812,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.yamaguchiLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.yamaguchi),
-            address: "山口市滝町1-1",
+            address: LocalizationManager.shared.localizedString(.yamaguchiAddress),
             phone: "083-922-1101",
             fax: "",
             email: "",
@@ -831,7 +831,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.tokushimaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.tokushima),
-            address: "徳島市新町橋2-24",
+            address: LocalizationManager.shared.localizedString(.tokushimaAddress),
             phone: "088-622-1101",
             fax: "",
             email: "",
@@ -848,7 +848,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.takamatsuLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.kagawa),
-            address: "高松市番町1-8-15",
+            address: LocalizationManager.shared.localizedString(.takamatsuAddress),
             phone: "087-831-1101",
             fax: "",
             email: "",
@@ -866,7 +866,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.matsuyamaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.ehime),
-            address: "松山市一番町3-4-1",
+            address: LocalizationManager.shared.localizedString(.matsuyamaAddress),
             phone: "089-921-1101",
             fax: "",
             email: "",
@@ -883,7 +883,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.kochiLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.kochi),
-            address: "高知市丸ノ内2-1-45",
+            address: LocalizationManager.shared.localizedString(.kochiAddress),
             phone: "088-823-1101",
             fax: "",
             email: "",
@@ -902,7 +902,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.fukuokaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.fukuoka),
-            address: "福岡市博多区東公園7-7",
+            address: LocalizationManager.shared.localizedString(.fukuokaAddress),
             phone: "092-471-1101",
             fax: "",
             email: "",
@@ -921,7 +921,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.sagaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.saga),
-            address: "佐賀市城内1-1-59",
+            address: LocalizationManager.shared.localizedString(.sagaAddress),
             phone: "0952-24-1101",
             fax: "",
             email: "",
@@ -938,7 +938,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.nagasakiLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.nagasaki),
-            address: "長崎市江戸町2-13",
+            address: LocalizationManager.shared.localizedString(.nagasakiAddress),
             phone: "095-822-1101",
             fax: "",
             email: "",
@@ -955,7 +955,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.kumamotoLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.kumamoto),
-            address: "熊本市中央区手取本町1-1",
+            address: LocalizationManager.shared.localizedString(.kumamotoAddress),
             phone: "096-326-1101",
             fax: "",
             email: "",
@@ -973,7 +973,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.oitaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.oita),
-            address: "大分市府内町1-1-1",
+            address: LocalizationManager.shared.localizedString(.oitaAddress),
             phone: "097-536-1101",
             fax: "",
             email: "",
@@ -990,7 +990,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.miyazakiLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.miyazaki),
-            address: "宮崎市橘通東2-10-1",
+            address: LocalizationManager.shared.localizedString(.miyazakiAddress),
             phone: "0985-27-1101",
             fax: "",
             email: "",
@@ -1007,7 +1007,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.kagoshimaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.kagoshima),
-            address: "鹿児島市山下町5-1",
+            address: LocalizationManager.shared.localizedString(.kagoshimaAddress),
             phone: "099-222-1101",
             fax: "",
             email: "",
@@ -1026,7 +1026,7 @@ var legalOffices: [LegalOffice] {
         LegalOffice(
             name: LocalizationManager.shared.localizedString(.nahaLegalOffice),
             prefecture: LocalizationManager.shared.localizedString(.okinawa),
-            address: "那覇市泉崎1-2-2",
+            address: LocalizationManager.shared.localizedString(.nahaAddress),
             phone: "098-866-1101",
             fax: "",
             email: "",

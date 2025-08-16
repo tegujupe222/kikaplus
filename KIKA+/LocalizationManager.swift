@@ -510,6 +510,56 @@ enum LocalizationKey: String, CaseIterable, RawRepresentable {
     case registrationConsultation = "registration_consultation"
     case weekdays = "weekdays"
     
+    // 法務局住所
+    case sapporoAddress = "sapporo_address"
+    case hakodateAddress = "hakodate_address"
+    case aomoriAddress = "aomori_address"
+    case moriokaAddress = "morioka_address"
+    case sendaiAddress = "sendai_address"
+    case akitaAddress = "akita_address"
+    case yamagataAddress = "yamagata_address"
+    case fukushimaAddress = "fukushima_address"
+    case ibarakiAddress = "ibaraki_address"
+    case tochigiAddress = "tochigi_address"
+    case gunmaAddress = "gunma_address"
+    case chibaAddress = "chiba_address"
+    case tokyoAddress = "tokyo_address"
+    case yokohamaAddress = "yokohama_address"
+    case saitamaAddress = "saitama_address"
+    case niigataAddress = "niigata_address"
+    case toyamaAddress = "toyama_address"
+    case kanazawaAddress = "kanazawa_address"
+    case fukuiAddress = "fukui_address"
+    case yamanashiAddress = "yamanashi_address"
+    case naganoAddress = "nagano_address"
+    case gifuAddress = "gifu_address"
+    case shizuokaAddress = "shizuoka_address"
+    case nagoyaAddress = "nagoya_address"
+    case mieAddress = "mie_address"
+    case otsuAddress = "otsu_address"
+    case kyotoAddress = "kyoto_address"
+    case osakaAddress = "osaka_address"
+    case kobeAddress = "kobe_address"
+    case naraAddress = "nara_address"
+    case wakayamaAddress = "wakayama_address"
+    case tottoriAddress = "tottori_address"
+    case matsueAddress = "matsue_address"
+    case okayamaAddress = "okayama_address"
+    case hiroshimaAddress = "hiroshima_address"
+    case yamaguchiAddress = "yamaguchi_address"
+    case tokushimaAddress = "tokushima_address"
+    case takamatsuAddress = "takamatsu_address"
+    case matsuyamaAddress = "matsuyama_address"
+    case kochiAddress = "kochi_address"
+    case fukuokaAddress = "fukuoka_address"
+    case sagaAddress = "saga_address"
+    case nagasakiAddress = "nagasaki_address"
+    case kumamotoAddress = "kumamoto_address"
+    case oitaAddress = "oita_address"
+    case miyazakiAddress = "miyazaki_address"
+    case kagoshimaAddress = "kagoshima_address"
+    case nahaAddress = "naha_address"
+    
     // InterviewPreparationView用
     case motivationReason = "motivation_reason"
     case lifeWork = "life_work"
@@ -1050,6 +1100,56 @@ struct LocalizationData {
             "family_register_consultation": "戸籍相談",
             "registration_consultation": "登記相談",
             "weekdays": "平日",
+            
+            // 法務局住所
+            "sapporo_address": "札幌市中央区北1条西13丁目",
+            "hakodate_address": "函館市本町24-1",
+            "aomori_address": "青森市新町1-3-1",
+            "morioka_address": "盛岡市内丸10-1",
+            "sendai_address": "仙台市青葉区本町3-3-1",
+            "akita_address": "秋田市大町3-1-1",
+            "yamagata_address": "山形市本町1-1-1",
+            "fukushima_address": "福島市杉妻町5-75",
+            "ibaraki_address": "水戸市三の丸1-5-38",
+            "tochigi_address": "宇都宮市本町1-1-1",
+            "gunma_address": "前橋市大手町1-1-1",
+            "chiba_address": "千葉市中央区市場町1-1",
+            "tokyo_address": "東京都千代田区霞が関1-1-1",
+            "yokohama_address": "横浜市中区山下町2",
+            "saitama_address": "さいたま市浦和区高砂3-15-1",
+            "niigata_address": "新潟市中央区東大通1-1-1",
+            "toyama_address": "富山市新桜町7-38",
+            "kanazawa_address": "金沢市広坂1-1-1",
+            "fukui_address": "福井市大手3-17-1",
+            "yamanashi_address": "甲府市丸の内1-1-1",
+            "nagano_address": "長野市大字鶴賀緑町1613",
+            "gifu_address": "岐阜市司町40-5",
+            "shizuoka_address": "静岡市葵区追手町9-6",
+            "nagoya_address": "名古屋市中区三の丸2-2-1",
+            "mie_address": "津市丸之内27-45",
+            "otsu_address": "大津市京町4-1-1",
+            "kyoto_address": "京都市上京区下立売通新町西入薮ノ内町",
+            "osaka_address": "大阪市中央区大手前1-3-49",
+            "kobe_address": "神戸市中央区下山手通4-4-1",
+            "nara_address": "奈良市登大路町30",
+            "wakayama_address": "和歌山市七番丁23",
+            "tottori_address": "鳥取市東町1-220",
+            "matsue_address": "松江市殿町1",
+            "okayama_address": "岡山市北区大供1-1-1",
+            "hiroshima_address": "広島市中区上八丁堀6-30",
+            "yamaguchi_address": "山口市滝町1-1",
+            "tokushima_address": "徳島市新町橋2-24",
+            "takamatsu_address": "高松市番町1-8-15",
+            "matsuyama_address": "松山市一番町3-4-1",
+            "kochi_address": "高知市丸ノ内2-1-45",
+            "fukuoka_address": "福岡市博多区東公園7-7",
+            "saga_address": "佐賀市城内1-1-59",
+            "nagasaki_address": "長崎市江戸町2-13",
+            "kumamoto_address": "熊本市中央区手取本町1-1",
+            "oita_address": "大分市府内町1-1-1",
+            "miyazaki_address": "宮崎市橘通東2-10-1",
+            "kagoshima_address": "鹿児島市山下町5-1",
+            "naha_address": "那覇市泉崎1-2-2",
             
             "spouse_of_japanese": "日本人の配偶者等",
             "spouse_of_permanent_resident": "永住者の配偶者等",
@@ -1623,7 +1723,57 @@ struct LocalizationData {
             "nationality_consultation": "Nationality Consultation",
             "family_register_consultation": "Family Register Consultation",
             "registration_consultation": "Registration Consultation",
-            "weekdays": "Weekdays"
+            "weekdays": "Weekdays",
+            
+            // 法務局住所
+            "sapporo_address": "1-13 Nishi, 1-chome, Chuo-ku, Sapporo",
+            "hakodate_address": "24-1 Honcho, Hakodate",
+            "aomori_address": "1-3-1 Shinmachi, Aomori",
+            "morioka_address": "10-1 Uchimaru, Morioka",
+            "sendai_address": "3-3-1 Honcho, Aoba-ku, Sendai",
+            "akita_address": "3-1-1 Omachi, Akita",
+            "yamagata_address": "1-1-1 Honcho, Yamagata",
+            "fukushima_address": "5-75 Sugitsuma-cho, Fukushima",
+            "ibaraki_address": "1-5-38 Sannomaru, Mito",
+            "tochigi_address": "1-1-1 Honcho, Utsunomiya",
+            "gunma_address": "1-1-1 Ote-machi, Maebashi",
+            "chiba_address": "1-1 Ichiba-cho, Chuo-ku, Chiba",
+            "tokyo_address": "1-1-1 Kasumigaseki, Chiyoda-ku, Tokyo",
+            "yokohama_address": "2 Yamashita-cho, Naka-ku, Yokohama",
+            "saitama_address": "3-15-1 Takasago, Urawa-ku, Saitama",
+            "niigata_address": "1-1-1 Higashi-Odori, Chuo-ku, Niigata",
+            "toyama_address": "7-38 Shinsakura-cho, Toyama",
+            "kanazawa_address": "1-1-1 Hirobaka, Kanazawa",
+            "fukui_address": "3-17-1 Ote, Fukui",
+            "yamanashi_address": "1-1-1 Marunouchi, Kofu",
+            "nagano_address": "1613 Tsuruga Midori-cho, Nagano",
+            "gifu_address": "40-5 Tsukasa-cho, Gifu",
+            "shizuoka_address": "9-6 Ote-cho, Aoi-ku, Shizuoka",
+            "nagoya_address": "2-2-1 Sannomaru, Naka-ku, Nagoya",
+            "mie_address": "27-45 Marunouchi, Tsu",
+            "otsu_address": "4-1-1 Kyomachi, Otsu",
+            "kyoto_address": "Shimotachiuri-dori Shinmachi Nishi-iru, Yabu-no-uchi-cho, Kamigyo-ku, Kyoto",
+            "osaka_address": "1-3-49 Ote-mae, Chuo-ku, Osaka",
+            "kobe_address": "4-4-1 Shimoyamate-dori, Chuo-ku, Kobe",
+            "nara_address": "30 Noborioji-cho, Nara",
+            "wakayama_address": "23 Nanaban-cho, Wakayama",
+            "tottori_address": "1-220 Higashi-cho, Tottori",
+            "matsue_address": "1 Tonodan-cho, Matsue",
+            "okayama_address": "1-1-1 Ogu, Kita-ku, Okayama",
+            "hiroshima_address": "6-30 Kamihachihoribori, Naka-ku, Hiroshima",
+            "yamaguchi_address": "1-1 Takimachi, Yamaguchi",
+            "tokushima_address": "2-24 Shinmachi-bashi, Tokushima",
+            "takamatsu_address": "1-8-15 Bancho, Takamatsu",
+            "matsuyama_address": "3-4-1 Ichiban-cho, Matsuyama",
+            "kochi_address": "2-1-45 Marunouchi, Kochi",
+            "fukuoka_address": "7-7 Higashi Koen, Hakata-ku, Fukuoka",
+            "saga_address": "1-1-59 Jonai, Saga",
+            "nagasaki_address": "2-13 Edo-machi, Nagasaki",
+            "kumamoto_address": "1-1 Tetori Honmachi, Chuo-ku, Kumamoto",
+            "oita_address": "1-1-1 Funai-machi, Oita",
+            "miyazaki_address": "2-10-1 Tachibana-dori Higashi, Miyazaki",
+            "kagoshima_address": "5-1 Yamashita-cho, Kagoshima",
+            "naha_address": "1-2-2 Izumizaki, Naha"
         ],
         .chineseSimplified: [
             "app_name": "KIKA+",
@@ -1917,7 +2067,57 @@ struct LocalizationData {
             "nationality_consultation": "国籍咨询",
             "family_register_consultation": "户籍咨询",
             "registration_consultation": "登记咨询",
-            "weekdays": "工作日"
+            "weekdays": "工作日",
+            
+            // 法務局住所
+            "sapporo_address": "札幌市中央区北1条西13丁目",
+            "hakodate_address": "函館市本町24-1",
+            "aomori_address": "青森市新町1-3-1",
+            "morioka_address": "盛岡市内丸10-1",
+            "sendai_address": "仙台市青葉区本町3-3-1",
+            "akita_address": "秋田市大町3-1-1",
+            "yamagata_address": "山形市本町1-1-1",
+            "fukushima_address": "福島市杉妻町5-75",
+            "ibaraki_address": "水戸市三の丸1-5-38",
+            "tochigi_address": "宇都宮市本町1-1-1",
+            "gunma_address": "前橋市大手町1-1-1",
+            "chiba_address": "千葉市中央区市場町1-1",
+            "tokyo_address": "東京都千代田区霞が関1-1-1",
+            "yokohama_address": "横浜市中区山下町2",
+            "saitama_address": "さいたま市浦和区高砂3-15-1",
+            "niigata_address": "新潟市中央区東大通1-1-1",
+            "toyama_address": "富山市新桜町7-38",
+            "kanazawa_address": "金沢市広坂1-1-1",
+            "fukui_address": "福井市大手3-17-1",
+            "yamanashi_address": "甲府市丸の内1-1-1",
+            "nagano_address": "長野市大字鶴賀緑町1613",
+            "gifu_address": "岐阜市司町40-5",
+            "shizuoka_address": "静岡市葵区追手町9-6",
+            "nagoya_address": "名古屋市中区三の丸2-2-1",
+            "mie_address": "津市丸之内27-45",
+            "otsu_address": "大津市京町4-1-1",
+            "kyoto_address": "京都市上京区下立売通新町西入薮ノ内町",
+            "osaka_address": "大阪市中央区大手前1-3-49",
+            "kobe_address": "神戸市中央区下山手通4-4-1",
+            "nara_address": "奈良市登大路町30",
+            "wakayama_address": "和歌山市七番丁23",
+            "tottori_address": "鳥取市東町1-220",
+            "matsue_address": "松江市殿町1",
+            "okayama_address": "岡山市北区大供1-1-1",
+            "hiroshima_address": "広島市中区上八丁堀6-30",
+            "yamaguchi_address": "山口市滝町1-1",
+            "tokushima_address": "徳島市新町橋2-24",
+            "takamatsu_address": "高松市番町1-8-15",
+            "matsuyama_address": "松山市一番町3-4-1",
+            "kochi_address": "高知市丸ノ内2-1-45",
+            "fukuoka_address": "福岡市博多区東公園7-7",
+            "saga_address": "佐賀市城内1-1-59",
+            "nagasaki_address": "長崎市江戸町2-13",
+            "kumamoto_address": "熊本市中央区手取本町1-1",
+            "oita_address": "大分市府内町1-1-1",
+            "miyazaki_address": "宮崎市橘通東2-10-1",
+            "kagoshima_address": "鹿児島市山下町5-1",
+            "naha_address": "那覇市泉崎1-2-2"
         ],
         .chineseTraditional: [
             "app_name": "KIKA+",
