@@ -1117,6 +1117,22 @@ struct LocalizationData {
             "interview_a18": "Not particularly.",
             "interview_tip18": "Answer concisely.",
             
+            // Document Checklist
+            "document_checklist_title": "Document Checklist",
+            "necessary_document_progress": "Required Document Progress",
+            "select_country": "Select Country",
+            "select_status": "Select Status",
+            "passport": "Passport",
+            "passport_desc": "Valid passport with visa",
+            "birth_certificate": "Birth Certificate",
+            "birth_certificate_desc": "Official birth certificate",
+            "nationality_certificate": "Nationality Certificate",
+            "nationality_certificate_desc": "Certificate of nationality",
+            "residence_card": "Residence Card",
+            "residence_card_desc": "Valid residence card",
+            "tax_certificate": "Tax Certificate",
+            "tax_certificate_desc": "Tax payment certificate",
+            
             // Translation Support
             "translation_support_title": "Translation Support",
             "select_language": "Select Language",
@@ -1343,6 +1359,22 @@ struct LocalizationData {
             "interview_a18": "没有特别的问题。",
             "interview_tip18": "请简洁回答。",
             
+            // Document Checklist
+            "document_checklist_title": "文件清单",
+            "necessary_document_progress": "必要文件进度",
+            "select_country": "选择国家",
+            "select_status": "选择状态",
+            "passport": "护照",
+            "passport_desc": "有效护照及签证",
+            "birth_certificate": "出生证明",
+            "birth_certificate_desc": "官方出生证明",
+            "nationality_certificate": "国籍证明",
+            "nationality_certificate_desc": "国籍证书",
+            "residence_card": "居留卡",
+            "residence_card_desc": "有效居留卡",
+            "tax_certificate": "纳税证明",
+            "tax_certificate_desc": "纳税证明书",
+            
             // Translation Support
             "translation_support_title": "翻译支持",
             "select_language": "选择语言",
@@ -1551,6 +1583,22 @@ struct LocalizationData {
             "interview_a12": "是的，很好。",
             "interview_tip12": "請表現出您與家人關係良好。",
             
+            // Document Checklist
+            "document_checklist_title": "文件檢查清單",
+            "necessary_document_progress": "必要文件進度",
+            "select_country": "選擇國家",
+            "select_status": "選擇狀態",
+            "passport": "護照",
+            "passport_desc": "有效護照及簽證",
+            "birth_certificate": "出生證明",
+            "birth_certificate_desc": "官方出生證明",
+            "nationality_certificate": "國籍證明",
+            "nationality_certificate_desc": "國籍證書",
+            "residence_card": "居留卡",
+            "residence_card_desc": "有效居留卡",
+            "tax_certificate": "納稅證明",
+            "tax_certificate_desc": "納稅證明書",
+            
             // Translation Support
             "translation_support_title": "翻譯支援",
             "select_language": "選擇語言",
@@ -1574,7 +1622,6 @@ struct LocalizationData {
             "corresponding_status": "居留資格",
             "select_country": "選擇國家",
             "select_status": "選擇居留資格",
-            "necessary_document_progress": "必要文件進度",
             "completed": "完成",
             
             // 步驟指南
@@ -1742,6 +1789,22 @@ struct LocalizationData {
             "interview_q18": "Bạn có câu hỏi nào khác không?",
             "interview_a18": "Không có gì đặc biệt.",
             "interview_tip18": "Hãy trả lời ngắn gọn.",
+            
+            // Document Checklist
+            "document_checklist_title": "Danh sách tài liệu",
+            "necessary_document_progress": "Tiến độ tài liệu cần thiết",
+            "select_country": "Chọn quốc gia",
+            "select_status": "Chọn trạng thái",
+            "passport": "Hộ chiếu",
+            "passport_desc": "Hộ chiếu hợp lệ với visa",
+            "birth_certificate": "Giấy khai sinh",
+            "birth_certificate_desc": "Giấy khai sinh chính thức",
+            "nationality_certificate": "Giấy chứng nhận quốc tịch",
+            "nationality_certificate_desc": "Chứng chỉ quốc tịch",
+            "residence_card": "Thẻ cư trú",
+            "residence_card_desc": "Thẻ cư trú hợp lệ",
+            "tax_certificate": "Giấy chứng nhận thuế",
+            "tax_certificate_desc": "Chứng chỉ thanh toán thuế",
             
             // Translation Support
             "translation_support_title": "Hỗ trợ dịch thuật",
@@ -1969,6 +2032,22 @@ struct LocalizationData {
             "interview_a18": "특별히 없습니다.",
             "interview_tip18": "간결하게 답하세요.",
             
+            // Document Checklist
+            "document_checklist_title": "서류 체크리스트",
+            "necessary_document_progress": "필요 서류 진행률",
+            "select_country": "국가 선택",
+            "select_status": "상태 선택",
+            "passport": "여권",
+            "passport_desc": "유효한 여권과 비자",
+            "birth_certificate": "출생증명서",
+            "birth_certificate_desc": "공식 출생증명서",
+            "nationality_certificate": "국적증명서",
+            "nationality_certificate_desc": "국적 증명서",
+            "residence_card": "거주카드",
+            "residence_card_desc": "유효한 거주카드",
+            "tax_certificate": "세금증명서",
+            "tax_certificate_desc": "세금 납부 증명서",
+            
             // Translation Support
             "translation_support_title": "번역 지원",
             "select_language": "언어 선택",
@@ -2195,6 +2274,22 @@ struct LocalizationData {
             "interview_a18": "Walang partikular.",
             "interview_tip18": "Sumagot nang maikli.",
             
+            // Document Checklist
+            "document_checklist_title": "Listahan ng Dokumento",
+            "necessary_document_progress": "Pag-unlad ng Kinakailangang Dokumento",
+            "select_country": "Piliin ang Bansa",
+            "select_status": "Piliin ang Katayuan",
+            "passport": "Pasaporte",
+            "passport_desc": "Wastong pasaporte na may visa",
+            "birth_certificate": "Sertipiko ng Kapanganakan",
+            "birth_certificate_desc": "Opisyal na sertipiko ng kapanganakan",
+            "nationality_certificate": "Sertipiko ng Nasyonalidad",
+            "nationality_certificate_desc": "Sertipiko ng nasyonalidad",
+            "residence_card": "Kard ng Paninirahan",
+            "residence_card_desc": "Wastong kard ng paninirahan",
+            "tax_certificate": "Sertipiko ng Buwis",
+            "tax_certificate_desc": "Sertipiko ng pagbabayad ng buwis",
+            
             // Translation Support
             "translation_support_title": "Suporta sa Pagsasalin",
             "select_language": "Piliin ang Wika",
@@ -2420,6 +2515,22 @@ struct LocalizationData {
             "interview_q18": "तपाईंसँग अरू प्रश्नहरू छन्?",
             "interview_a18": "विशेष छैन।",
             "interview_tip18": "संक्षिप्त रूपमा जवाफ दिनुहोस्।",
+            
+            // Document Checklist
+            "document_checklist_title": "कागजात चेकलिस्ट",
+            "necessary_document_progress": "आवश्यक कागजात प्रगति",
+            "select_country": "देश छान्नुहोस्",
+            "select_status": "स्थिति छान्नुहोस्",
+            "passport": "राहदानी",
+            "passport_desc": "वैध राहदानी र भिसा",
+            "birth_certificate": "जन्म प्रमाणपत्र",
+            "birth_certificate_desc": "आधिकारिक जन्म प्रमाणपत्र",
+            "nationality_certificate": "राष्ट्रियता प्रमाणपत्र",
+            "nationality_certificate_desc": "राष्ट्रियता प्रमाणपत्र",
+            "residence_card": "बसोबास कार्ड",
+            "residence_card_desc": "वैध बसोबास कार्ड",
+            "tax_certificate": "कर प्रमाणपत्र",
+            "tax_certificate_desc": "कर भुक्तानी प्रमाणपत्र",
             
             // Translation Support
             "translation_support_title": "अनुवाद सहयोग",
