@@ -1587,7 +1587,7 @@ struct LocalizationData {
             "document_checklist_title": "文件檢查清單",
             "necessary_document_progress": "必要文件進度",
             "select_country": "選擇國家",
-            "select_status": "選擇狀態",
+
             "passport": "護照",
             "passport_desc": "有效護照及簽證",
             "birth_certificate": "出生證明",
@@ -1612,7 +1612,6 @@ struct LocalizationData {
             "faq_q3": "應該請求專業翻譯嗎？",
             
             // 文件檢查清單
-            "document_checklist_title": "文件檢查清單",
             "document_detail_title": "文件詳細",
             "where_to_get": "取得方法",
             "examples": "範例",
@@ -1620,7 +1619,6 @@ struct LocalizationData {
             "corresponding_country_status": "對應國家・居留資格",
             "corresponding_country": "對應國家",
             "corresponding_status": "居留資格",
-            "select_country": "選擇國家",
             "select_status": "選擇居留資格",
             "completed": "完成",
             
