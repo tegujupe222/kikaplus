@@ -434,6 +434,7 @@ enum LocalizationKey: String, CaseIterable, RawRepresentable {
     case nationalityConsultation = "nationality_consultation"
     case familyRegisterConsultation = "family_register_consultation"
     case registrationConsultation = "registration_consultation"
+    case weekdays = "weekdays"
     
     // InterviewPreparationView用
     case motivationReason = "motivation_reason"
@@ -900,6 +901,7 @@ struct LocalizationData {
             "nationality_consultation": "国籍相談",
             "family_register_consultation": "戸籍相談",
             "registration_consultation": "登記相談",
+            "weekdays": "平日",
             
             "spouse_of_japanese": "日本人の配偶者等",
             "spouse_of_permanent_resident": "永住者の配偶者等",
@@ -1398,7 +1400,8 @@ struct LocalizationData {
             "naturalization_consultation": "Naturalization Consultation",
             "nationality_consultation": "Nationality Consultation",
             "family_register_consultation": "Family Register Consultation",
-            "registration_consultation": "Registration Consultation"
+            "registration_consultation": "Registration Consultation",
+            "weekdays": "Weekdays"
         ],
         .chineseSimplified: [
             "app_name": "KIKA+",
@@ -1691,7 +1694,8 @@ struct LocalizationData {
             "naturalization_consultation": "归化咨询",
             "nationality_consultation": "国籍咨询",
             "family_register_consultation": "户籍咨询",
-            "registration_consultation": "登记咨询"
+            "registration_consultation": "登记咨询",
+            "weekdays": "工作日"
         ],
         .chineseTraditional: [
             "app_name": "KIKA+",
@@ -1878,7 +1882,8 @@ struct LocalizationData {
             "configure": "設定",
             "no_matching_reminders": "沒有符合的提醒",
             "notification_deadline_management": "通知・期限管理",
-            "search_legal_office": "搜尋法務局"
+            "search_legal_office": "搜尋法務局",
+            "weekdays": "工作日"
         ],
         .vietnamese: [
             "app_name": "KIKA+",
@@ -2120,7 +2125,8 @@ struct LocalizationData {
             "naturalization_consultation": "Tư vấn nhập tịch",
             "nationality_consultation": "Tư vấn quốc tịch",
             "family_register_consultation": "Tư vấn hộ tịch",
-            "registration_consultation": "Tư vấn đăng ký"
+            "registration_consultation": "Tư vấn đăng ký",
+            "weekdays": "Các ngày trong tuần"
         ],
         .korean: [
             "app_name": "KIKA+",
@@ -2362,7 +2368,8 @@ struct LocalizationData {
             "naturalization_consultation": "귀화 상담",
             "nationality_consultation": "국적 상담",
             "family_register_consultation": "호적 상담",
-            "registration_consultation": "등기 상담"
+            "registration_consultation": "등기 상담",
+            "weekdays": "평일"
         ],
         .filipino: [
             "app_name": "KIKA+",
@@ -2604,7 +2611,8 @@ struct LocalizationData {
             "naturalization_consultation": "Konsultasyon sa Naturalisasyon",
             "nationality_consultation": "Konsultasyon sa Nasyonalidad",
             "family_register_consultation": "Konsultasyon sa Rehistro ng Pamilya",
-            "registration_consultation": "Konsultasyon sa Rehistrasyon"
+            "registration_consultation": "Konsultasyon sa Rehistrasyon",
+            "weekdays": "Mga araw ng linggo"
         ],
         .nepali: [
             "app_name": "KIKA+",
@@ -2846,7 +2854,8 @@ struct LocalizationData {
             "naturalization_consultation": "नागरिकता परामर्श",
             "nationality_consultation": "राष्ट्रियता परामर्श",
             "family_register_consultation": "परिवार दर्ता परामर्श",
-            "registration_consultation": "दर्ता परामर्श"
+            "registration_consultation": "दर्ता परामर्श",
+            "weekdays": "कार्य दिनहरू"
         ]
     ]
 } 

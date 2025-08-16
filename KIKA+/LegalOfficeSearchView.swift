@@ -15,19 +15,37 @@ struct LegalOfficeSearchView: View {
     @State private var selectedOffice: LegalOffice?
     @ObservedObject private var localizationManager = LocalizationManager.shared
     
-    let prefectures: [String] = []
+    init() {
+        // 初期化時に北海道を選択
+        _selectedPrefecture = State(initialValue: LocalizationManager.shared.localizedString(.hokkaido))
+    }
     
-    var filteredOffices: [LegalOffice] {
-        if searchText.isEmpty {
-            return legalOffices.filter { $0.prefecture == selectedPrefecture }
-        } else {
-            return legalOffices.filter { office in
-                office.prefecture == selectedPrefecture &&
-                (office.name.localizedCaseInsensitiveContains(searchText) ||
-                 office.address.localizedCaseInsensitiveContains(searchText))
-            }
+    var prefectures: [String] {
+    [
+        LocalizationManager.shared.localizedString(.hokkaido),
+        LocalizationManager.shared.localizedString(.aomori),
+        LocalizationManager.shared.localizedString(.iwate),
+        LocalizationManager.shared.localizedString(.miyagi),
+        LocalizationManager.shared.localizedString(.akita),
+        LocalizationManager.shared.localizedString(.yamagata),
+        LocalizationManager.shared.localizedString(.fukushima),
+        LocalizationManager.shared.localizedString(.tokyo),
+        LocalizationManager.shared.localizedString(.kanagawa),
+        LocalizationManager.shared.localizedString(.saitama)
+    ]
+}
+
+var filteredOffices: [LegalOffice] {
+    if searchText.isEmpty {
+        return legalOffices.filter { $0.prefecture == selectedPrefecture }
+    } else {
+        return legalOffices.filter { office in
+            office.prefecture == selectedPrefecture &&
+            (office.name.localizedCaseInsensitiveContains(searchText) ||
+             office.address.localizedCaseInsensitiveContains(searchText))
         }
     }
+}
     
     var body: some View {
         NavigationView {
@@ -130,7 +148,134 @@ struct LegalOffice {
     let services: [String]
 }
 
-let legalOffices: [LegalOffice] = []
+var legalOffices: [LegalOffice] {
+    [
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.sapporoLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.hokkaido),
+            address: "札幌市中央区北1条西13丁目",
+            phone: "011-251-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 43.0618,
+            longitude: 141.3545,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.nationalityConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.hakodateLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.hokkaido),
+            address: "函館市本町24-1",
+            phone: "0138-23-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 41.7688,
+            longitude: 140.7289,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.aomoriLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.aomori),
+            address: "青森市新町1-3-1",
+            phone: "017-722-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 40.8243,
+            longitude: 140.7403,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.sendaiLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.miyagi),
+            address: "仙台市青葉区本町3-3-1",
+            phone: "022-221-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 38.2688,
+            longitude: 140.8721,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.nationalityConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.tokyoLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.tokyo),
+            address: "東京都千代田区霞が関1-1-1",
+            phone: "03-3580-4111",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 35.6762,
+            longitude: 139.6503,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.nationalityConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.yokohamaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.kanagawa),
+            address: "横浜市中区山下町2",
+            phone: "045-201-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 35.4437,
+            longitude: 139.6380,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.familyRegisterConsultation)
+            ]
+        ),
+        LegalOffice(
+            name: LocalizationManager.shared.localizedString(.saitamaLegalOffice),
+            prefecture: LocalizationManager.shared.localizedString(.saitama),
+            address: "さいたま市浦和区高砂3-15-1",
+            phone: "048-822-1101",
+            fax: "",
+            email: "",
+            website: "",
+            hours: "8:30-17:15",
+            consultationDays: LocalizationManager.shared.localizedString(.weekdays),
+            latitude: 35.8569,
+            longitude: 139.6489,
+            services: [
+                LocalizationManager.shared.localizedString(.naturalizationConsultation),
+                LocalizationManager.shared.localizedString(.registrationConsultation)
+            ]
+        )
+    ]
+}
 
 struct LegalOfficeCard: View {
     let office: LegalOffice
